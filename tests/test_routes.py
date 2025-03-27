@@ -130,3 +130,5 @@ class CounterTest(TestCase):
         # Gte it to make sure it's really gone
         resp = self.app.get(f"/counters/{name}")
         self.assertEqual(resp.status_code, status.HTTP_404_NOT_FOUND)
+
+### This is for run a CI test
